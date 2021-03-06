@@ -13,8 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge.data
 
-import androidx.compose.material.Typography
+import java.util.concurrent.TimeUnit
 
-val typography = Typography()
+data class TimeHolder(
+    val hours: Long,
+    val minutes: Long,
+    val seconds: Long
+) {
+
+    fun toMillis() =
+        TimeUnit.HOURS.toMillis(hours) +
+            TimeUnit.MINUTES.toMillis(minutes) +
+            TimeUnit.SECONDS.toMillis(seconds)
+}

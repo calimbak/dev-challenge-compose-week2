@@ -9,5 +9,8 @@
       or implied. See the License for the specific language governing permissions and limitations under
       the License.
       -->
-    <string name="app_name">AndroidDevChallenge</string>
+    <string name="app_name">Compose Countdown Timer</string>
+    <string name="count_down_cta">Start count down</string>
+    <string name="semi_column">:</string>
+    <string name="countdown_title">Countdown Timer</string>
 </resources>
